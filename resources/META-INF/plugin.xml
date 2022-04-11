@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin url="">
+    <id>org.zwx.idea.plugin</id>
+    <name>JsonTools</name>
+    <version>1.0</version>
+    <vendor email="111111111@qq.com" url=""></vendor>
+
+    <description>
+        &lt;p&gt;Enhances your productivity when developing applications .&lt;/p&gt;
+    </description>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>org.jetbrains.idea.maven</depends>
+
+    <idea-version since-build="191.4212.41"/>
+
+    <actions>
+        <group id="Json Tools" text="Json Tools"
+               popup="true" >
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="ReplaceInPath"/>
+        </group>
+
+        <action class="org.zwx.idea.right.NewBasicExeAction"
+                id="json.basic.class" description="Json2PO"
+                text="Json2PO">
+            <add-to-group group-id="Json Tools"/>
+        </action>
+
+    </actions>
+</idea-plugin>
