@@ -5,6 +5,7 @@ import freemarker.template.Configuration;
 public class FreemarkerConfiguration extends Configuration {
     private String basePackagePath;
 
+
     public FreemarkerConfiguration() {
         this("");
     }
